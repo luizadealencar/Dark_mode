@@ -1,0 +1,221 @@
+body{
+    text-align: center;
+}
+.cabeçalho{
+    display: flex;
+    background-color: purple;
+    align-items: center;
+    padding: 0% 3%;
+}
+h3{
+    font-family: 'Yatra One', cursive;
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0 1em;
+    clear: left;
+    font-weight: bold;
+}
+.texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-bottom: 80px;
+}
+.texto p{
+    max-width: 25%;
+    margin-right: 80px;
+}
+.banner{
+    max-width: 300px;
+    box-shadow: 10px 10px 10px #000000;
+}
+.opções{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 3% 10% 3%;
+}
+h1{
+    font-family: 'Yatra One', cursive;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+}
+.opções{
+    padding: 32px 0;
+}
+.opções__item{
+    padding: 2em 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button{
+    cursor: pointer;
+    border: 1px solid #555;
+    text-align: center;
+    padding: 5px;
+    margin-left: 8px; 
+}
+.dark{
+    background-color: #222;
+    color: #e6e6e6;
+}
+#switch-div{
+    display: flex;
+    align-items: center;
+}
+#switch-div>p{
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input{
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before{
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider{
+    background-color: #2196F3;
+}
+input:focus + .slider{
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before{
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round{
+    border-radius: 34px;
+}
+.slider.round:before{
+    border-radius: 50%;
+}
+.pacotes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 3% 3% 3%;
+}
+.pacotes li{
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+.pacotes li:hover{
+    transform: scale(1.1);
+}
+.imagem{
+    width: 350px;
+    height: 180px;
+    border-radius: 5px;
+}
+.produto-preco, .produto-descricao{
+    color: LimeGreen;
+    font-size: 20px;
+    line-height: 1.4;
+    word-break: normal;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+h2{
+    color: #228B22;
+    font-size: 24px;
+    line-height: 1.4;
+    word-break: normal;
+    font-weight: bold;
+}
+.perfil1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 28px;
+}
+.nome{
+    font-weight: bold;
+}
+p{
+    font-size: 24px;
+}
+footer{
+    text-align: center;
+    background-color: purple;
+    background: purple;
+    padding: 40px 33px;
+    display: block;
+    width: 100%;
+}
+.copyright{
+    color: #FFFFFF;
+    font-size: 13px;
+}
+@media only screen and (max-width: 480px){
+    body{
+        font-size: 12px;
+        width: 100%;
+    }
+    .cabeçalho{
+        display: flex;
+        flex-direction: column;
+        padding: 15px 10px 10px 10px;
+    }
+    .opções{
+        padding: 0;
+    }
+    .texto{
+        display: inline-block;
+        position: relative;
+        align-items: center;
+    }
+    .texto p{
+        max-width: 600px;
+        margin: 0 16px 10px 0;
+    }
+    .banner{
+       margin: 0 16px 0 0;
+    }
+    .pacotes{
+        display: grid;
+        justify-content: space-evenly;
+    }
+    .pacotes li{
+        margin: 0 0 26px 0;
+    }
+    .perfil1 p{
+        margin: 0 10px 0 10px;
+    }
+}
